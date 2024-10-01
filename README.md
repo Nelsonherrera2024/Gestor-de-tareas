@@ -69,6 +69,6 @@ Inicia el proyecto en [http://localhost:5173/](http://localhost:5173/)
 ## Autor
 Grupo # 7 
 
-Nelson Enrique Herrera Díaz – Líder - desarrollador
-Ana María Ortega Lagos – relatora - desarrolladora
-Jesús Daniel Duarte Moreno  - desarrollador  
+*Nelson Enrique Herrera Díaz – Líder - desarrollador
+*Ana María Ortega Lagos – relatora - desarrolladora
+*Jesús Daniel Duarte Moreno  - desarrollador  

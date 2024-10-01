@@ -13,17 +13,17 @@ Este proyecto es diseñado por el Grupo # 7 el cual es un gestor de tareas, con 
 
 ## Características
 
--Barra buscar tarea, buscar categoría y botón buscar
--Campo texto para ingresar el titulo de la tarea
--Campo texto para ingresar la descripción de la tarea 
--Selector de campo que selecciona de la lista una categoría de tarea
--Selector de fecha para vencimiento de la tarea que puede ser escrita o seleccionada de un calendario adjunto
--Botón de agregar tarea
--Tarjeta de tarea agregada que contiene : Nombre de tarea, categoría de tarea, Fecha de creación de la tarea la cual es automática y relativa a la fecha del día de creación de la tarea, fecha de vencimiento.
--Botón mostrar ocultar descripción en la tarjeta
--Check de tarea completada
--Botón editar tarea, por si se necesita modificar algún campo de la tarea
--Botón eliminar tarea.
+*Barra buscar tarea, buscar categoría y botón buscar
+*Campo texto para ingresar el titulo de la tarea
+*Campo texto para ingresar la descripción de la tarea 
+*Selector de campo que selecciona de la lista una categoría de tarea
+*Selector de fecha para vencimiento de la tarea que puede ser escrita o seleccionada de un calendario adjunto
+*Botón de agregar tarea
+*Tarjeta de tarea agregada que contiene : Nombre de tarea, categoría de tarea, Fecha de creación de la tarea la cual es automática y relativa a la fecha del día de creación de la tarea, fecha de vencimiento.
+*Botón mostrar ocultar descripción en la tarjeta
+*Check de tarea completada
+*Botón editar tarea, por si se necesita modificar algún campo de la tarea
+*Botón eliminar tarea.
 
 
 ## Comandos para la creación del proyecto

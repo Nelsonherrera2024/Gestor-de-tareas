@@ -1,0 +1,128 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --color-purple: #f5eef4;
+  --color-dark-blue: #0655f3;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Estilos del footer */
+
+footer {
+  width: 99.5%;
+  background-color: var(--color-dark-blue);
+  background-size: cover;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.dev__info {
+  color: var(--color-purple);
+  font-size: 1.0rem;
+  font-weight: 600;
+}
+
+.company__info {
+  color: var(--color-purple);
+  font-size: 1.0rem;
+  margin-Right: 30px;
+}
+
+.mensaje__titulo {
+  color: var(--color-pueple);
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+
+.mensaje-error {
+  color: var(--color-purple);
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+
+.LogoGitHub {
+  width: 50px;
+  margin-left: 30px;
+  /* Este es el espacio entre el texto y el icono */
+  vertical-align: middle;
+  transition: all 1s;
+}
+
+.Logolinkendin {
+  width: 40px;
+  margin-left: 20px;
+  /* Este es el espacio entre el texto y el icono */
+  vertical-align: middle;
+  transition: all 1s;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+

@@ -1,0 +1,282 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('./img/equipo.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input, .category-filter, .task-input, .category-select, .date-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-input, .category-filter {
+  flex: 1;
+}
+
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input, .category-select, .date-input {
+  flex: 1 1 200px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.task-card {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.task-card.completed {
+  background-color: #e6ffe6;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.task-title {
+  margin: 0;
+  font-size: 1.2em;
+  word-break: break-word;
+  flex: 1;
+  padding-right: 10px;
+}
+
+.task-category {
+  background-color: #ddd;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
+
+.task-dates {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.task-dates p {
+  margin: 5px 0;
+}
+
+.task-dates strong {
+  font-weight: bold;
+  color: #333;
+}
+
+
+.task-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.task-actions label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.task-description {
+  margin-top: 10px;
+}
+
+.task-description textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.description-toggle {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.description-toggle:hover {
+  background-color: #e0e0e0;
+}
+
+.task-description p {
+  margin-top: 5px;
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #555;
+}
+
+.edit-btn, .delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9em;
+  flex: 1;
+  text-align: center;
+}
+
+.edit-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.completion-date {
+  font-size: 0.8em;
+  color: #4CAF50;
+  margin-top: 10px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  flex: 1;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-btn:hover {
+  background-color: #45a049;
+}
+
+.category-filter {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .app {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .search-container, .category-filter {
+    width: 100%;
+  }
+
+  .search-input, .search-btn {
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-input, .category-select, .date-input {
+    width: 100%;
+  }
+
+  .task-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .task-list {
+    grid-template-columns: 1fr;
+  }
+
+  .task-card {
+    width: 100%;
+  }
+}
